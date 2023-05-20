@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js">
+  </script>  <link rel="stylesheet" href="styles.css">
+  <title>Animaciones</title>
+</head>
+
+<body>
+ 
+
+  <nav class="navbar navbar-expand-sm navbar-light " >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)">Acordeon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria1" id="lgaleria1">Galeria 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria2" id="lgaleria2">Galeria 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeria3" id="lgaleria3">Galeria 3</a>
+          </li>
+        </ul>
+        <form class="d-flex ">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</button>
+      
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Usuario</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword" class="col-form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Acordeon">
+  <div class="texto">Bienvenidos</div>
+  <div class="texto">
+    <span>a mi gran acordeon</span>
+  </div>
+  </div>
+
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <h2>Galeria 1</h2>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="tomatos.webp">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Tomates</h3>
+            <h2>De la huerta recien cojidos</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="manzanas.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Pomes</h3>
+            <h2>En tu fruteria cercana</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="cerezas.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Cerezas</h3>
+            <h2>Vendidas a Juan Pablo</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="Strawberries.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Fresas</h3>
+            <h2>Perfectas para Smothies</h2>
+          </div>
+        </div>
+      </li>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="tomatos.webp">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Tomates</h3>
+            <h2>De la huerta recien cojidos</h2>
+          </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="tomatos.webp">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Tomates</h3>
+            <h2>De la huerta recien cojidos</h2>
+          </div>
+        </div>
+    </div>
+  </div>
+<!-- 
+  <div id="Acordeon">
+    <div class="texto">Bienvenidos</div>
+    <div class="texto">
+      <span>a mi gran acordeon</span>
+    </div>
+    <ul>
+      <li>
+        <input type="checkbox" id="galeria1" checked>
+        <i></i>
+        <h2>Galeria 1</h2>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="tomatos.webp">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Tomates</h3>
+            <h2>De la huerta recien cojidos</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="manzanas.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Pomes</h3>
+            <h2>En tu fruteria cercana</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="cerezas.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Cerezas</h3>
+            <h2>Vendidas a Juan Pablo</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="Strawberries.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Fresas</h3>
+            <h2>Perfectas para Smothies</h2>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input type="checkbox" id="galeria2" checked>
+        <i></i>
+        <h2>Galeria 2</h2>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="azul1.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Tomates</h3>
+            <h2>De la huerta recien cojidos</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="azul2.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Pomes</h3>
+            <h2>En tu fruteria cercana</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="azul3.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Cerezas</h3>
+            <h2>Vendidas a Juan Pablo</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="azul4.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Fresas</h3>
+            <h2>Perfectas para Smothies</h2>
+          </div>
+        </div>
+      </li>
+      <li>
+        <input type="checkbox" id="galeria3" checked>
+        <i></i>
+        <h2>Galeria 3</h2>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="tomatos.webp">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Tomates</h3>
+            <h2>De la huerta recien cojidos</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="manzanas.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Pomes</h3>
+            <h2>En tu fruteria cercana</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="cerezas.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Cerezas</h3>
+            <h2>Vendidas a Juan Pablo</h2>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content-overlay"></div>
+          <img class="content-image" src="Strawberries.jpg">
+          <div class="content-details fadeIn-bottom fadeIn-left">
+            <h3>Fresas</h3>
+            <h2>Perfectas para Smothies</h2>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+-->
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

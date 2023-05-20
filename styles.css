@@ -1,0 +1,56 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    background-color: #1C6758;
+    margin: auto;
+    width: 50%;
+}
+h1{
+    color: #D6CDA4;
+    display:flex;
+    border-left: solid;
+    border-width: 0.5rem;
+    border-color:#D6CDA4;
+    padding-left: 0.5rem;
+    font-family: 'Bebas Neue', cursive;
+}
+.cabecera > *{
+    padding: 0.5rem;
+    color: #D6CDA4;
+    margin: 50px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: x-large;
+}
+li{
+    font-size: large;
+    padding: 0.2rem;
+    font-family:monospace;
+}
+div{
+    margin: 10px;
+}
+.lista{
+    background-image: url(./mateNegro.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    font-size: x-large;
+    color: #EEF2E6;
+}
+.parrafo{
+    border-style: double;
+    border-color: #D6CDA4;
+    font-family:monospace;
+    color: #EEF2E6;
+    padding: 1rem;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    line-height: 1.3em;
+    text-indent: 2em;
+}
+div.scroll{
+    height: 100vh;
+}
